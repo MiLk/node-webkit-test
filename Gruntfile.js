@@ -50,20 +50,20 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>/node-webkit.app/Contents/Resources/app.nw',
           src: '**'
         },
-          {
-            expand: true,
-            cwd: '<%= config.resources %>/mac-files/',
-            dest: '<%= config.dist %>/node-webkit.app/Contents/',
-            filter: 'isFile',
-            src: '*.plist'
-          },
-          {
-            expand: true,
-            cwd: '<%= config.resources %>/mac-files/',
-            dest: '<%= config.dist %>/node-webkit.app/Contents/Resources/',
-            filter: 'isFile',
-            src: '*.icns'
-          }]
+        {
+          expand: true,
+          cwd: '<%= config.resources %>/mac-files/',
+          dest: '<%= config.dist %>/node-webkit.app/Contents/',
+          filter: 'isFile',
+          src: '*.plist'
+        },
+        {
+          expand: true,
+          cwd: '<%= config.resources %>/mac-files/',
+          dest: '<%= config.dist %>/node-webkit.app/Contents/Resources/',
+          filter: 'isFile',
+          src: '*.icns'
+        }]
       },
       webkit: {
         files: [{
