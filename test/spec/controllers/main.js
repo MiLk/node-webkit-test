@@ -23,4 +23,8 @@ describe('Controller: MainCtrl', function () {
   it('should attach a list of files to the scope', function () {
     expect(scope.home).toContain('Applications');
   });
+
+  it('should attach a list of numbers to the scope', function () {
+    expect(scope.shuffle.length).toBe(6);
+  });
 });
