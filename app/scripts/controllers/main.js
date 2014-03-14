@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 angular.module('packageApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
@@ -7,4 +9,6 @@ angular.module('packageApp')
       'AngularJS',
       'Karma'
     ];
+
+    $scope.home = fs.readdirSync(process.env.HOME);
   });
