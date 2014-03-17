@@ -27,4 +27,8 @@ describe('Controller: MainCtrl', function () {
   it('should attach a list of numbers to the scope', function () {
     expect(scope.shuffle.length).toBe(6);
   });
+
+  it('should attach a random string to the scope', function () {
+    expect(scope.rand.length).toBe(17);
+  });
 });
